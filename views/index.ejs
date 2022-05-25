@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta autor="Julio Cesar Nieto Castillo">
+    <meta description="Curriculum vitae hecho con express y EJS">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="ICON" href="icon.ico">
+    <title>Curriculum</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mis_datos">
+          <div class="img"><img src="images/img.jpg" alt=""></div>
+            <div class="datos">
+                <h1>Julio Cesar Nieto Castillo</h1><br>
+                <h2>Cedula: 29908830</h2><br>
+                <h2>Edad: 19 años</h2><br>
+            </div>
+
+        
+       
+         </div>
+         <div class="article">
+          <article class="ar_1">
+            <h3>Experiencia Laboral</h3>
+            <p>
+                No cuento conexperiencia laboral oficial, aun así cuento con experiencia en el area de las 
+            criptomonedas, como los es el juego de axie infinity, Plantas vs Undead, ademas de tambien
+            conocimientos sobre el trading en la plataforma de Binance, ademas de conocer los metodos de pago e interacción con el mundo de las criptomonedas por medio de la plataforma ya antes mencionada. Tambien cuento con experiencia en cocina y reposteria de manera autodidacta y nivel intermedio.
+            </p>
+              
+          </article>
+        
+          <article class="ar_2">
+            <h3>Formacion Academica</h3>
+            <ul class="lista_1">
+                <li><b>2015</b>: U.E Colegio San Adres (Eduación primaria)</li>
+                <li><b>2020</b>: U.E José Angel de Alamo (Eduación secundaria)</li>
+                <li>Ingles Intermedio</li>
+                <br>
+                <p>Tambien cuento con los conocimientos basicos e intermedios en el campo de la programación
+                gracias a el eestudio autodidacta en diversos cursos gratuitos sin certificación y tambien 
+            a la investigacion de documentacion oficial de las tecnologias y lenguajes que manejo</p>
+            </ul>
+              
+          </article>
+
+          <article class="ar_3">
+               <h3>Redes sociales</h3>
+            <ul>
+                <li><b>Facebook:</b><a target="_blank" href="https://www.facebook.com/profile.php?id=100009566161902">Aquí</a></li>
+                <li><b>Telefono: +584241889350</b></li>
+                <li><b>Github:</b><a target="_blank" href="https://github.com/juliocnc19">Aquí</a></li>
+                <li><b>Correo Electronico:</b> juliocnietoc19@gmail.com</li>
+            </ul>
+
+          </article>
+
+          <article class="ar_4">
+            <h3>Lenguajes de Programación</h3>
+              <div><img src="images/domi.jpg"></div>
+              <div><img src="images/c.jpg"></div>
+          </article>
+
+          <article class="ar_5">    
+            <h3>Habilidades y Destrezas</h3>
+                <ul>
+                    <li>Buen trabajo en equipo</li>
+                    <li>Adaptabilidad</li>
+                    <li>Abierto a lo diferente en el ambiente laboral y estudiantil</li>
+                    <li>Buen manejo de los sistemas informaticos</li>
+                    <li>Manejo de la terminal de Linux</li>
+                    <li>Tolerante</li>
+                    
+                </ul>
+          </article>
+
+              <h2 class="contactame">Contactame</h2>
+                <form class="mensaje">
+                    <input class="nombre" name='nombre' type="text" placeholder="Ingrese su nombre" required="true" value="<%= ct.nombre%>">
+                    <input class="mail" name='email' type="email"  placeholder="Ingrese su email" required="true" value="<%= ct.email%>">
+                    <input class="contenido"  name='comentario' type="text" placeholder="Comentario" required="true" value="<%= ct.comentario%>">
+                    <input type="hidden" value="<%= ct.ip%>">
+                    <input type="hidden"  value="<%= ct.fecha%>">
+                    <input type="submit" class="enviar" value="Enviar">
+                </form>
+        </div>
+
+     
+     </div>
+        
+        
+</body>
+</html>
